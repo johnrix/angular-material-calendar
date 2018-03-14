@@ -3,7 +3,7 @@
         <div class='md-toolbar-tools' layout='row'>
             <md-button class="md-icon-button" ng-click='prev()' aria-label="Previous month">
                 <md-tooltip ng-if="::tooltips()">Previous month</md-tooltip>
-                <md-icon md-svg-icon="md-tabs-arrow" ></md-icon>
+                <md-icon md-svg-icon="md-tabs-arrow" class="movePrev"></md-icon>
             </md-button>
             <div flex></div>
             <h2 class='calendar-md-title'><span ng-bind-html='calendar.start | date:titleFormat:timezone'></span></h2>

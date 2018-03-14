@@ -12,6 +12,11 @@ angular.module("materialCalendar").config(["materialCalendar.config", "$logProvi
     }
 }]);
 
+angular.module("materialCalendar").config(["$mdIconProvider", "$$mdSvgRegistry", function($mdIconProvider, $$mdSvgRegistry) {
+    // Add default icons from angular material (see https://github.com/angular/material/issues/9336)
+    $mdIconProvider.icon("md-tabs-arrow", $$mdSvgRegistry.mdToggleArrow);
+}]);
+
 angular.module("materialCalendar").directive("compile", ["$compile", function ($compile) {
     return function(scope, element, attrs) {
         scope.$watch(
