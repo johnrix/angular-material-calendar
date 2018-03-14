@@ -15,6 +15,11 @@ calendar-md {
             text-overflow: ellipsis;
             white-space: nowrap;
         }
+
+        button.md-button {
+            margin-top: 6px;
+        }
+        
         .movePrev {
             -ms-transform: translate3d(0%,0%,0) rotate(270deg);
             -webkit-transform: translate3d(0%,0%,0) rotate(270deg);
